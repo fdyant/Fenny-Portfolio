@@ -81,6 +81,9 @@ nav span:hover {
             margin:0;
             padding:5px 5px;
         }
+        nav a{
+            font-size: 14px;
+        }
 }
 
 
@@ -355,8 +358,6 @@ footer p{
     color: rgb(240, 240, 220);
     text-align: center;
 }
-/*media screen*/
-
 
 /* SVG text animation*/
 
