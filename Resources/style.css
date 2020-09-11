@@ -35,12 +35,8 @@ a{
 }
 
 /*header section*/
-.flex-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 header {
+    display: flex;
     width: 100%;
     position: fixed;
     z-index:5;
@@ -69,6 +65,12 @@ nav span:hover {
     border-radius:10px;
     
 }
+@media screen and (max-width: 500px){
+        .flex-container{
+            font-size: 14px;
+        }
+}
+
 
 /*home */
 .profile {
@@ -321,6 +323,7 @@ nav span:hover {
 .media{
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size:14px;
 }
 .icon li{
@@ -378,7 +381,7 @@ svg text{
 /*media screen*/
 @media screen and (min-width: 500px){
     body{
-        font-size: 14pt;
+        font-size: 14px;
     }
 }
 
