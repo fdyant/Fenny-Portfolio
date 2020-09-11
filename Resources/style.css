@@ -5,7 +5,7 @@
 body{
     margin:0;
     padding:0;
-    font-size: 18px;
+    font-size: 16px;
     color: GhostWhite;
     overflow-x: hidden;
     font-family: 'Paprika', cursive;
@@ -43,9 +43,11 @@ a{
 header {
     width: 100%;
     position: fixed;
-    z-index: 1;
-    height: 69px;
+    z-index:5;
+    height: 40px;
     align-items: center;
+    background-color: rgb(51, 62, 100);
+    opacity: .60;
 }
 nav a{
     text-align: center;
@@ -117,6 +119,9 @@ nav span:hover {
 @media screen and (max-width: 500px) {
     .profile h1, h3{
         font-size: 18px;
+    }
+    .header{
+        width: 80%;
     }
 }
 
@@ -254,16 +259,17 @@ nav span:hover {
     border: #FFF 2px solid;
 }
 .skill-item img{
+    width: 200px;
     height: 150px;
-    margin: 10px;
-    display: inline-flex;
+    margin:10px 10px;
 }
 @media screen and (max-width: 500px) {
     .skill-container{
-        width:90%;
+        width:70%;
+        float:none;
     }
     .viewBox {
-        width: 90%;
+        width: 80%;
     }
 
 }
@@ -299,7 +305,6 @@ nav span:hover {
     color: antiquewhite;
 }
 
-
 #contact{
     margin-top:50px;
     display: flex;
@@ -311,19 +316,12 @@ nav span:hover {
     text-overflow: clip;
     text-align: center;
 }
-footer p{
-    font-size: 12px;
-    color: rgb(240, 240, 220);
-    text-align: center;
-}
 
 /*media & footer*/
 .media{
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-content: center;
-    font-size:16px;
+    font-size:14px;
 }
 .icon li{
     color: rgb(245, 35, 35);
@@ -337,6 +335,13 @@ footer p{
     color: rgb(247, 238, 238);
     text-decoration: none;
 }
+footer p{
+    font-size: 12px;
+    color: rgb(240, 240, 220);
+    text-align: center;
+}
+/*media screen*/
+
 
 /* SVG text animation*/
 
@@ -366,15 +371,13 @@ svg text{
 }
 @media screen and (max-width: 500px){
     svg text {
-        font-size:100px;
+        font-size:85px;
     }
 }
 
-
-
 /*media screen*/
 @media screen and (min-width: 500px){
-    body {
+    body{
         font-size: 14pt;
     }
 }
