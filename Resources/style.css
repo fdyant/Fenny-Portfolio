@@ -36,14 +36,14 @@ a{
 
 /*header section*/
 header {
-    display: flex;
+    display:flex;
     padding-top: 10px;
     width: 100%;
     position: fixed;
-    z-index:5;
+    z-index:1;
     height: 50px;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     background-color: rgb(51, 62, 100);
     opacity: .60;
 }
@@ -68,9 +68,9 @@ nav span:hover {
     
 }
 @media screen and (max-width: 500px){
-        .header{
+        header{
             font-size: 14px;
-            width:70%;
+            width:50%;
         }
 }
 
