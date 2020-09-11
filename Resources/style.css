@@ -70,13 +70,13 @@ nav span:hover {
 @media only screen and (max-width: 500px){
         header{
             text-align: center;
-            width:85%;
+            width:80%;
         }
         .flex-container{
             display:inline;
         }
         nav span{
-            display:inline;
+            display:inline-block;
             float:none;
             margin:0;
             padding:5px 5px;
@@ -137,8 +137,8 @@ nav span:hover {
     .profile h1, h3{
         font-size: 18px;
     }
-    .header{
-        width: 80%;
+    .profile p{
+        font-size:16px;
     }
 }
 
@@ -202,7 +202,7 @@ nav span:hover {
         font-size:12px;
     }
     #about .container-resume{
-        width:90%;
+        width:80%;
 }
 }
 /*text animation*/
