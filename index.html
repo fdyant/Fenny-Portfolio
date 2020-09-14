@@ -10,7 +10,6 @@
     <title>Fenny's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Paprika&family=Press+Start+2P&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/325d85b0bb.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -22,7 +21,9 @@
 
 <!--header section-->
 <header class="flex-container">
-        <nav>
+    <label for="toggle">&#9776</label>
+    <input type="checkbox" id="toggle">
+        <nav class="menu">
         <span><i class="fas fa-home" aria-hidden="true"></i>
             <a href="index.html">Home</a> 
         </span>
@@ -38,6 +39,16 @@
         </nav>
 </header>
 
+<main>
+<div class="text-animation">
+    <span>W</span>
+    <span>E</span>
+    <span>L</span>
+    <span>C</span>
+    <span>O</span> 
+    <span>M</span>
+    <span>E</span>
+</div>
 <!--profile section-->
     <div class="profile" data-aos="zoom-in">
         
@@ -49,41 +60,31 @@
     </div>
 
 </section>
+<main>
 
 <!--about section-->
 
 <div id="about">
 
-    <div class="text-animation">
-        <span>A</span>
-        <span>B</span>
-        <span>O</span>
-        <span>U</span>
-        <span>T</span> <br>
-        <span>M</span>
-        <span>E</span></br>
-
-    </div>
-
     <div class="container-resume">
-        <div class="resume" data-aos="zoom-out">
+        <div class="resume" data-aos="slide-down">
         <p>I am talented web developer. I'm interested in all kinds of visual communication, but my major focus is on designing web, mobile & tablet interfaces. 
         I also have skills in other fields like branding, icon design or web development.</p>
         </div>
 
-        <div class="resume" data-aos="slide-down">
+        <div class="resume" data-aos="slide-up">
         <p>I am well-organized person, work well in team collaborations, high attention to detail and problem solver. 
         I professionally worked in Telecommunication industry for many years.</p>
         </div>
+        <button class="btn-resume"><a href="Resources/images/resume.pdf" target="_blank">View My Resume</button>
     </div>
-    <button class="experience"><a href="Resources/images/resume.pdf" target="_blank">View My Resume</button>
 </div>
 
 <!--skill section-->
 
 <div id="portfolio">
 
-    <svg viewBox="0 0 1300 200">
+    <svg viewBox="0 0 1500 200">
         <text x="35%" y="35%" fill ="transparent" text-anchor="center">
             My Current Skills
         </text>
@@ -119,24 +120,26 @@
 
         <h2>My Current Projects</h2>
 
-<div class="project-list">
+    <div class="project-list">
 
-        <div class="project" data-aos="flip-up">
+        <div class="project">
             <p>Ice Cream Shop</p>
         <a href="https://fdyant.github.io/katieskorner-icecream.github.io/" target="_blank"><img src= "Resources/images/Katies.PNG"/></a>
         </div>
 
-        <div class="project" data-aos="flip-down">
+        <div class="project">
             <p> Other Projects</p>
         <img src="Resources/images/comingsoon.gif">
         </div>
+    </div>
 </div>
 
+
+<!--contact-->
 <div id="contact">
         <p>I am open for opportunities, also interested in freelance. However, if you have other request or questions, please contact me.</p>
 
-
-<!--media icon-->
+        <!--media icon-->
 <div class="media">
     <ul class="icon">
 <li>
@@ -167,9 +170,8 @@
 <script>
     AOS.init({
         offset: 400,
-        duration: 1000
+        duration: 800
     });
 </script>
-  
 </body>
 </html>

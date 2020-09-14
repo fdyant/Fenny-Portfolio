@@ -5,7 +5,7 @@
 body{
     margin:0;
     padding:0;
-    font-size: 16px;
+    font-size: 18px;
     color: GhostWhite;
     overflow-x: hidden;
     font-family: 'Paprika', cursive;
@@ -36,64 +36,98 @@ a{
 
 /*header section*/
 .flex-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    border-bottom: 1px solid seashell;
+    text-align: right;
+    height: 60px;
+    line-height: 60px;
 }
 header {
     position: fixed;
     width:100%;
     z-index:1;
-    height: 50px;
-    justify-content: center;
+    height: 60px;
+    border-bottom: 1px solid seashell;
     background-color: rgb(51, 62, 100);
-    opacity: .60;
+    opacity: .70;
+    text-align: right;
+    justify-content: center;
 }
-nav a{
-    text-align: center;
+.menu {
+    margin:0 30px 0 0;
+}
+.menu a{
+    clear:right;
     text-decoration: none;
-    color:rgb(174, 185, 236);
+    color:rgb(231, 234, 247);
+    margin: 0 10px;
     font-size: 16px;
 }
-nav span{
+.menu span{
     display:inline-block;
-    padding: 10px 10px;
     color: rgb(201, 33, 33);  
 }
-nav span:hover {
-    display: inline-block;
-    color: rgb(201, 33, 33);
-    background-color: #a538388a;
-    border-radius:10px;
-    
+.menu span:hover {
+    background-color: #ababdb8a;;
+    border-radius: 10px;
+    line-height: 40px;
+
+}
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 60px;
+    display: none;
+    width: 26px;
+    float: right;
+    color:red;
+}
+#toggle {
+    display: none;
 }
 @media only screen and (max-width: 500px){
-        header{
-            text-align: center;
-            width:80%;
+        label{
+            display: block;
+            cursor:pointer;
         }
-        .flex-container{
+        .menu{
+            text-align:center;
+            display: none;
+            width:150px;
+        }
+        .menu a{
             display:inline;
-        }
-        nav span{
-            display:inline-block;
-            float:none;
             margin:0;
-            padding:5px 5px;
-        }
-        nav a{
             font-size: 14px;
+        }
+        .menu span{
+            display:block;
+            margin:0;
+            height: 40px;
+            border: #FFF 1px solid;
+            background-color: rgb(3, 17, 29);
+            border-radius:10px;
+            line-height: 40px;
+        }
+        .menu span:hover{
+            display:block;
+        }
+        #toggle:checked + .menu {
+            display: block;
         }
 }
 
-
-/*home */
+/*home-welcome */
+main{
+    display: flex;
+    flex-direction:column;
+    margin: auto;
+}
 .profile {
     color: rgb(245, 227, 227);
     display: inline-flexbox;
     flex-direction: row;
     margin-top:10%;
-    padding-top:100px;
+    padding-top:50px;
 }
 .profile img{
     width: 200px;
@@ -112,7 +146,6 @@ nav span:hover {
 }
 
 .btn-about{
-    color: rgb(160, 44, 44);
     padding: 10px 15px 10px;
     display: inline-block;
     margin: 5px 5px;
@@ -132,86 +165,14 @@ nav span:hover {
     background-color: #626d92;
     transition: all 0.3s ease;
 }
-/*media screen*/
-@media only screen and (max-width: 500px) {
-    .profile h1, h3{
-        font-size: 18px;
-    }
-    .profile p{
-        font-size:16px;
-    }
-}
 
-/*about*/
-
-#about{
-    display: flex;
-    flex-direction: column;
-    background: url('https://images.pexels.com/photos/5292962/pexels-photo-5292962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat;
-    min-height:100vh;
-    opacity: .8;
-    z-index:-1;
-    padding-top:20px;
-    margin-top:2px;
-}
-#about .container-resume{
-    margin: auto;
-    width: 700px;
-    height: auto;
-    margin-top:50px;
-    flex-direction: column;
-    justify-content: center;
-}
-.resume{
-    margin: 15px 15px;
-    display: flex;
-}
-.resume p{
-    font-size: 18px;
-    text-align: center;
-    color: rgb(2, 29, 36);
-}
-
-.experience{
-    width:150px;
-    margin:auto;
-    padding: 10px 10px;
-    display: inline-block;
-    cursor: pointer;
-    transition-duration: 0.5s;
-    background-color: #466091;
-    opacity: .80;
-    border-radius:10px;
-}
-.experience a{
-    text-decoration:none;
-    text-align: center;
-    color:floralwhite;
-    font-size:12px;
-    font-family: 'Paprika', cursive;;
-}
-.experience:hover{
-    background: rgb(15, 132, 248);
-}
-@media only screen and (max-width: 500px) {
-    .resume div{
-        width:80%;
-        justify-content: center;
-    }
-    #about p{
-        font-size:12px;
-    }
-    #about .container-resume{
-        width:80%;
-}
-}
 /*text animation*/
 
 .text-animation{
-    margin-top:50px;
     text-align:center;
-    font-size:35px;
+    font-size:55px;
     letter-spacing: 3px;
+    height: 30px;
 }
 .text-animation > span {
     text-transform: uppercase;
@@ -223,7 +184,7 @@ nav span:hover {
     text-shadow: 0 0 10px #0652DD, 0 0 50px #465d88, 0 0 100px #0652DD;
     }
     10%, 90% {
-    color: rgb(20, 73, 189);
+    color: rgb(12, 37, 92);
     text-shadow:rgb(236, 234, 238);
     }
 }
@@ -246,18 +207,93 @@ nav span:hover {
     animation-delay: 1.5s;
 }
 
+/*media screen*/
+@media only screen and (max-width: 500px) {
+    .profile h1, h3{
+        font-size: 18px;
+    }
+    .profile p{
+        font-size:16px;
+    }
+    .text-animation{
+        font-size:30px;
+    }
+}
+
+/*about*/
+
+#about .container-resume{
+    display: flex;
+    flex-direction: column;
+    background: url('https://images.pexels.com/photos/5352852/pexels-photo-5352852.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat;
+    min-height:100vh;
+    opacity: .70;
+    margin-top:2px;
+    background-size: cover;
+}
+
+#about .container-resume{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:10%;
+}
+
+.container-resume div{
+    padding: 10px 10px 10px;
+    margin-bottom: 10px;
+    width: 800px;
+}
+.resume p{
+    font-size: 20px;
+    text-align:left;
+    color: rgb(1, 7, 8);
+}
+
+.btn-resume{
+    width:130px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    background-color: #466091;
+    opacity: .80;
+    border-radius:10px;
+}
+.btn-resume a{
+    text-decoration:none;
+    text-align: center;
+    color:floralwhite;
+    font-size:12px;
+    font-family: 'Paprika', cursive;;
+    display: inline-block;
+}
+.btn-resume:hover{
+    background: rgb(15, 132, 248);
+}
+
+@media only screen and (max-width: 500px) {
+    .container-resume div{
+    width:90%;
+    }
+    .resume p{
+        font-size:16px;
+        text-align: justify;
+    }
+}
+
 /* portfolio */
 
 #portfolio {
     display: flex;
     flex-direction: column;
-    min-height:120vh;
-    padding-top:20px;
+    min-height:100vh;
+    padding-top:10px;
     background:url('https://images.pexels.com/photos/2260649/pexels-photo-2260649.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat;
     background-size: cover;
     opacity:.80;
-    margin-top:2px;
+    margin-top:1px;
 }
+
 #portfolio h2{
     text-align: center;
     color: rgb(136, 221, 240);
@@ -265,53 +301,53 @@ nav span:hover {
     padding-bottom:15px;
     text-shadow: 2px 2px rgb(32, 21, 21);
 }
-
 .skill-container{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content:space-evenly;
+    padding-bottom: 20px;
 }
 .skill-item{
+    width:150px;
     padding:5px;
-    border: #FFF 2px solid;
 }
 .skill-item img{
-    width: 200px;
-    height: 150px;
-    margin:10px 10px;
+    width: 150px;
+    height: 100px;
 }
 @media only screen and (max-width: 500px) {
     .skill-container{
-        width:70%;
-        float:none;
+        width:90%;
+        display:flex;
+    }
+    .skill-item img{
+        width:90%;
     }
     .viewBox {
         width: 80%;
     }
-
 }
-
 
 /* Projects*/
 .project-list span{
     text-align: center;
     padding-bottom: 20px;
-    
 }
 .project-list{
     display: flex;
     justify-content: center;
+    padding-bottom: 60px;
 }
 .project-list div{
-    padding:15px 15px;
-    margin-left: 10px;
-    width:300px;
-    height:300px;
+    padding:15px 15px 15px;
+    margin-right: 10px;
+    width:200px;
+    height:200px;
     border:rgb(68, 62, 62) 2px solid;
     background-color: rgb(40, 50, 92, 0.5);
 }
 .project img{
-    width:100%;
+    width:85%;
     height: auto;
 }
 .project:hover{
@@ -323,11 +359,14 @@ nav span:hover {
 }
 
 #contact{
-    margin-top:50px;
+    min-height:30vh;
+    margin-top:1px;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    background-color: rgba(16, 60, 90, 0.7);
 }
 #contact p{
     text-overflow: clip;
@@ -362,12 +401,12 @@ footer p{
 /* SVG text animation*/
 
 svg{
-    padding-top: 20px;
-    margin-top: 10px;
+    padding-top: 10px;
+    margin-top: 5px;
 }
 svg text{
     stroke: rgb(80, 199, 247);
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 500;
     font-family: 'Alegreya', serif;
     stroke-width: 2.5;
@@ -394,7 +433,7 @@ svg text{
 /*media screen*/
 @media only screen and (max-width: 500px){
     body{
-        font-size: 14px;
+        font-size: 18px;
     }
 }
 
