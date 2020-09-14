@@ -113,6 +113,7 @@ label{
         }
         #toggle:checked + .menu {
             display: block;
+            color:red;
         }
 }
 
@@ -126,7 +127,7 @@ main{
     color: rgb(245, 227, 227);
     display: inline-flexbox;
     flex-direction: row;
-    margin-top:10%;
+    margin-top:20%;
     padding-top:50px;
 }
 .profile img{
@@ -136,19 +137,16 @@ main{
 }
 .profile p{
     margin:5px;
-    margin-top: 20px;
     font-size: 18px;
 }
 .profile h1{
     font-size: 30px;
-    margin:2px;
     text-align: start;
 }
 
 .btn-about{
     padding: 10px 15px 10px;
     display: inline-block;
-    margin: 5px 5px;
     cursor: pointer;
     border-radius:10px;
     background: rgb(15, 132, 248);
@@ -216,7 +214,7 @@ main{
         font-size:16px;
     }
     .text-animation{
-        font-size:30px;
+        font-size:25px;
     }
 }
 
