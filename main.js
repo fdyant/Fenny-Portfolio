@@ -7,5 +7,7 @@ menuToggle.addEventListener('click', () => {
 });
 
 const scroll = new SmoothScroll('.menu a[href*="#"]', {
-	speed: 800
+        speed: 800
 });
+
+
