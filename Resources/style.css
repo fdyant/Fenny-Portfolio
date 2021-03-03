@@ -59,7 +59,7 @@ transition: 0.5s;
 z-index: 2;
 }
 .sidebar.active{
-right: 250px;
+    right: 250px;
 }
 .menu {
     position:absolute;
@@ -73,6 +73,7 @@ right: 250px;
     background-color:#12232E;
     
 }
+
 .menu img{
     width:70%;
 }
@@ -97,6 +98,8 @@ right: 250px;
 .menu ul li a:hover{
     color:#fff; 
 }
+
+
 .sidebar video{
     position: absolute;
     top: 0;
@@ -259,15 +262,16 @@ li .btn-right{
     flex-direction:column;
 }
 .resume {
-    width:800px;
+    width:700px;
     margin:auto;
-    text-align:center;
+    text-align: justify;
     letter-spacing: 2px;
 }
 .resume h1{
     text-transform: uppercase;
     color: #fff;
     margin: 20px 0;
+    text-align: center;
 }
 .resume p{
     color: #fff;
@@ -275,22 +279,23 @@ li .btn-right{
     font-weight: 400;
 }
 .btn-resume{
+    width: 200px;
     display: inline-block;
-    background:#203647;
+    background:#20473a;
     padding: 10px 15px;
     transition: 0.2s;
     border-radius: 10px;
+    margin: auto;
 }
 .btn-resume a{
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 400;
-    margin-top: 10px;
-    color: rgb(248, 53, 53);
+    color: rgb(127, 179, 247);
     letter-spacing: 1px;
 }
 .btn-resume:hover{
-    background-color:#007CC7;
+    background-color:#636566;
     border:1px black solid;
 }
 
@@ -407,7 +412,7 @@ li .btn-right{
 .text {
     padding-top:20px;
     text-align: center;
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: 900;
     background: linear-gradient(
         45deg,
