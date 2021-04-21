@@ -28,6 +28,7 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+
 .toggle{
     position:relative;
     width: 60px;
@@ -428,7 +429,7 @@ li .btn-right{
         #4b501b
     );
     background-size: 400% 400%;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradient 20s ease infinite;
 }
